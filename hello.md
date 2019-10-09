@@ -3,8 +3,5 @@ Tutorial
 
 **hello:**
 
-'''
 
-helo
-
-'''
+(hello www.google.com)
