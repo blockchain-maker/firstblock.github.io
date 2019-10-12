@@ -124,18 +124,18 @@ $ ./startFabric.sh <br />
 To enroll the users firstly you have to enroll an Admin that will help to enroll other users with
 Hyperledger Fabric network of Fabcar. <br />
 $ node enrollAdmin.js <br />
-![enrolladmin first then add register user](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/queryjs.jpg)
+![enrolladmin first then add register user](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/enrolljs.jpg)
 
 You can find the private and public key for admin using the following <br />
 $ ls <br />
 $ cd hfc-key-store/ <br />
 $ ls <br />
-![enter image description here](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/queryjs.jpg)
+![enter image description here](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/enrolljs.jpg)
 Enroll the user to query and invoke fabcar network (As Hyperledger Fabric is a permissioned
 blockchain that is why firstly we have to register the user using its certificate) <br />
 $ cd ../ <br />
 $ node registerUser.js <br />
-![enter image description here](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/queryjs.jpg)
+![enter image description here](https://github.com/blockchain-maker/blockchain-maker.github.io/blob/master/assets/images/enrolljs.jpg)
 
 Query the Fabcar network using the following command (To access the ledger state) <br />
 $ node query.js <br />
