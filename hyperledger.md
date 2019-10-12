@@ -18,50 +18,50 @@ Hyperledger
 
 #### install go language
 
-sudo apt-get install golang-go
+2.sudo apt-get install golang-go <br />
 
-2.# Setup Go Path 
+#Setup Go Path <br />
 
-3.export GOPATH=$HOME/go
+3.export GOPATH=$HOME/go <br />
 
-4.export PATH=$PATH:$GOPATH/bin
+4.export PATH=$PATH:$GOPATH/bin <br />
 
 #### Install Docker for Ubuntu
 
- **Docker-ce** - Base package which makes all the necessary files available for the docker container to run properly. 
+ **Docker-ce** - Base package which makes all the necessary files available for the docker container to run properly. <br />
  
- **Docker-compose**- Base package which makes all the necessary files available for the docker container to run properly.
+ **Docker-compose**- Base package which makes all the necessary files available for the docker container to run properly. <br />
  
 --- 
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+5.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - <br />
 
  
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+6.sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
  
-sudo apt-get update
+7.sudo apt-get update
 
  
-apt-cache policy docker-ce
+8.apt-cache policy docker-ce
 
   
-sudo apt-get install -y docker
+9.sudo apt-get install -y docker
 
  
-sudo apt-get install docker-compose
+10.sudo apt-get install docker-compose
 
  
-sudo systemctl status docker
+11.sudo systemctl status docker
   
   
 #Check Docker Version
 
-docker-compose --version
+12.docker-compose --version
 
 #Running Docker Daemon
 
-dockerd
+13.dockerd
 
 ---
 
