@@ -67,72 +67,72 @@ Hyperledger
 curl sL https://deb.nodesource.com/setup_8.x | sudo -E bash - <br />
 
 #Check node version and NPM version
-$ node -version
-$ npm -version
+$ node -version <br />
+$ npm -version <br />
 
 ####  Enter the fabric-samples directory and install the platform specific binaries
-$ cd fabric-samples
-$ curl -sSL https://goo.gl/byy2Qj | bash -s 1.0.5
+$ cd fabric-samples <br />
+$ curl -sSL https://goo.gl/byy2Qj | bash -s 1.0.5 <br />
 
 If everything goes well you will see the above output on your screen. <br />
 To have a look on the download binaries execute the following from your terminal: <br />
-$ cd bin
-$ ls
+$ cd bin <br />
+$ ls <br />
 
 Enter into the first-network directory <br />
-$ cd ../
-$ cd first-network
-$ ls
+$ cd ../ <br />
+$ cd first-network <br />
+$ ls <br />
 
 Generate the required certificates and articates for your first network <br />
-$ ./byfn.sh -m generate
+$ ./byfn.sh -m generate <br />
 
 To see the generate certificates use the following command: <br />
-$ ls
-$ cd crypto-config
-$ ls
+$ ls <br />
+$ cd crypto-config <br />
+$ ls <br />
 
 Create your first network using the following command <br />
-$ cd ../
-$ ./byfn.sh -m up
+$ cd ../ <br /> <br />
+$ ./byfn.sh -m up <br />
 
 Check the generates images and running containers using the following command: <br />
-$ docker images
-$ docker ps
+$ docker images <br />
+$ docker ps <br />
 
 To bring down the created network executed the following command <br />
-$ ./byfn.sh -m down
+$ ./byfn.sh -m down <br />
 
 You can check the created images have been removed using the following: <br />
-$ docker images
+$ docker images <br />
 
  Move to the fabcar directory <br />
-$ cd ../
-$ ls
-$ cd fabcar
+$ cd ../ <br />
+$ ls <br />
+$ cd fabcar <br />
 
  Install the node modules using the following command <br />
-$ sudo npm install
+$ sudo npm install <br />
 
-Install grpc module for communication with Hyperledger Fabric using the following command:
-$ sudo npm install grpc
+Install grpc module for communication with Hyperledger Fabric using the following command: <br />
+$ sudo npm install grpc <br />
 
 Start the Hyperledger Fabric network for fabcar by executing the following command: <br />
-$ ./startFabric.sh
+$ ./startFabric.sh <br />
 
 To enroll the users firstly you have to enroll an Admin that will help to enroll other users with
 Hyperledger Fabric network of Fabcar. <br />
-$ node enrollAdmin.js
+$ node enrollAdmin.js <br />
 
 You can find the private and public key for admin using the following <br />
-$ ls
-$ cd hfc-key-store/
-$ ls
+$ ls <br />
+$ cd hfc-key-store/ <br />
+$ ls <br />
 
 Enroll the user to query and invoke fabcar network (As Hyperledger Fabric is a permissioned
 blockchain that is why firstly we have to register the user using its certificate) <br />
-$ cd ../
-$ node registerUser.js
+$ cd ../ <br />
+$ node registerUser.js <br />
 
 Query the Fabcar network using the following command (To access the ledger state) <br />
-$ node query.js
+$ node query.js <br />
