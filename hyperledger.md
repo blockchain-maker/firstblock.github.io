@@ -32,7 +32,6 @@ Hyperledger
  
  **Docker-compose**- Base package which makes all the necessary files available for the docker container to run properly. <br />
  
---- 
 
 5.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - <br />
 
@@ -63,7 +62,7 @@ Hyperledger
 
 13.dockerd
 
----
+
 
 
 
